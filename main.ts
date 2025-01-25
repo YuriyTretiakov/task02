@@ -26,7 +26,7 @@ function removeAll(id = null): void {
 }
 
 // base class
-class Modal {
+export class Modal {
     private readonly id: string;
 
     // static field

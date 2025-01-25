@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <style>
+        body {height: 100%};
+        .modal-wrap {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-top: 100px;
+        }
+        .modal-btn {
+            padding: 10px;
+            background: aquamarine;
+            width: 100px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .btn-second {
+            width: 120px;
+            border: 2px solid green;
+        }
+        .modal-element{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background: #fff;
+            border: 1px solid grey;
+        }
+        #first {
+            margin-top: 20px;
+            margin-left: 300px;
+            border: 2px solid green;
+
+        }
+    </style>
+</head>
+<body>
+<div class="modal-wrap">
+    <button class="modal-btn" onclick="openModal('first')">Открыть</button>
+    <button class="modal-btn btn-second" onclick="openModalSecond('second')">Открыть модалку №2</button>
+    <button class="modal-btn" onclick="removeModal()">Удалить</button>
+    <button class="modal-btn" onclick="removeAll()">Удалить все</button>
+</div>
+
+
+
+</body>
+</html>
